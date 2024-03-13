@@ -11,7 +11,7 @@ function verifierChamps(event) {
     document.querySelector("#last-name").value = "";
     document.querySelector("#message").value = "";
   }
-  try {
+  /*try */ {
     if (prenom == "" || nom == "" || commentaire == "") {
       document.querySelector("#error-message").style.display = "block";
     } else {
@@ -25,9 +25,9 @@ function verifierChamps(event) {
             </div>`;
       clear();
     }
-  } catch (err) {
+  } /*catch (err) {
     console.log(err);
-  }
+  }*/
 }
 
 document.querySelector("form").addEventListener("submit", verifierChamps);
